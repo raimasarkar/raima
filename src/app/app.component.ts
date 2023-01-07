@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'raima';
+  name="amitava";
+  address="kolkata"
+  f1()
+  {
+    alert('hi how are U?????')
+
+  }
+  uname=new FormControl("");
+  update()
+  {
+    this.uname.setValue("amitava");
+  }
 }
